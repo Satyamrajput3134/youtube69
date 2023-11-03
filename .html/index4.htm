@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body onload="">
+    <h3>APKA JAVASCRIPT ME SWAGAT HAI</h3>
+    <input id="userinput" placeholder="Your name">
+    
+    <button onclick="myfunction3()"> click me! </button>
+     <script>
+        // define javascript here.
+        function myfunction3(){
+            let name=document.getElementById("userinput").value;
+            console.log("Selected value",name)
+
+            if(name.length < 3){
+                alert("ERROR: Name lenght cannot be less than 3")
+
+            } else if(name.lengtha>10){
+                alert("ERROR: Name lenght cannot be greater than 10")
+
+            } else{
+                // only numeric value allowed
+                for (let i = 0; i < name.length; i=i+1){
+                    let digit = parseInt(name[i]);
+                    if (isNaN(digit)){
+                        alert("Text should be only have number");
+                        
+
+                    } else{
+                        console.log("Looks good")
+                    }
+                }
+                    console.log("validation complete")
+                }
+            }
+
+           // alert(" Welcome"+name)
+          //  let header =document.getElementById("heading");
+         //   header.innerHTML="Welcome"+name;
+        
+        function myfunction2(){ 
+            console.log("second function!@@")
+        }
+        function myfunction(){
+            //function body
+           // alert("javascript function!!!")
+           let name= prompt("enter you name.")
+           console.log("name is:",name)
+           let myvar = confirm("are you sure?");
+           console. log("value in myvar is:");
+           console.log(myvar)
+        }
+     </script>
+    
+</body>
+</html>
